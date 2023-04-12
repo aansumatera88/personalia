@@ -1,0 +1,28 @@
+                
+    '''
+    if 6-prgmasNum > 0:
+        for data in range(6-prgmasNum):
+            st.menuCode.append("")
+            st.menuName.append("")
+    
+    
+    #master1, master2, master3, master4, master5, master6 = st.tabs([st.menuName[0], st.menuName[1], st.menuName[2], st.menuName[3], st.menuName[4], st.menuName[5]])
+
+    with master1:
+        if prgmasNum > 0:
+            myProgram = st.menuCode[0]
+            myProgram = myProgram.lower()
+            myString1 = "import " + myProgram
+            exec(myString1)
+            myString2 = myProgram + "." + myProgram.title() + "()"
+            exec(myString2)
+            
+
+    with master2:
+        st.header("Customer Group ")
+        
+    with master3:
+        st.header("Feature Product")
+    '''
+         
+
